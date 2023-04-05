@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-
+import CartWidget from "./CartWidget";
 const NavBar = () => {
   return (
     <nav>
@@ -9,6 +9,7 @@ const NavBar = () => {
         <Button variant="text">Samsung</Button>
         <Button variant="text">Apple</Button>
       </div>
+      <CartWidget />
     </nav>
   );
 };
