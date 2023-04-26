@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <ItemListContainer saludo={"Bienvenido"} />
+      <ItemListContainer />
       <ItemCount
         initial={1}
         stock={10}
