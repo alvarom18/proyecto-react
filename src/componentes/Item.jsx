@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import styles from "./Item.module.css";
 const Item = ({ id, name, img, price, stock }) => {
   return (
     <article>
@@ -6,7 +7,7 @@ const Item = ({ id, name, img, price, stock }) => {
         <h2>{name}</h2>
       </header>
       <picture>
-        <img src={img} alt={name} />
+        <img src={img} alt={name} className={styles.imagenes} />
       </picture>
       <section>
         <p>Precio: ${price}</p>
