@@ -21,6 +21,13 @@ const ItemListContainer = ({ greeting }) => {
         console.error(error);
       });
   });
+
+  return (
+    <div>
+      <h1>{greeting}</h1>
+      <ItemList products={products} />
+    </div>
+  );
 };
 
 export default ItemListContainer;
