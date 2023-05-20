@@ -1,14 +1,7 @@
 import { useState, useEffect } from "react";
-import { getProducts } from "../Products";
-import ItemList from "../ItemList";
-
-// const ItemListContainer = ({ saludo }) => {
-//   return (
-//     <div>
-//       <h1>{saludo}</h1>
-//     </div>
-//   );
-// };
+import { getProducts } from "../Products/Products";
+import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
 const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
 

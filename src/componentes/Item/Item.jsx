@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import styles from "./Item.module.css";
+import ItemCount from "../Counter/Counter";
 const Item = ({ id, name, img, price, stock }) => {
   return (
     <article>
@@ -15,6 +16,11 @@ const Item = ({ id, name, img, price, stock }) => {
       </section>
       <footer>
         <Button variant="text">ver detalles</Button>
+        <ItemCount
+          initial={1}
+          stock={10}
+          onAdd={(cantidad) => console.log("Cantidad agregada", cantidad)}
+        />
       </footer>
     </article>
   );
